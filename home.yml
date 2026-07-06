@@ -1,0 +1,136 @@
+#Definer side
+- name: Startpage
+  width: wide
+  hide-desktop-navigation: true
+  center-vertically: true
+
+#Venstre kolonne
+
+  columns:
+    - size: small
+      widgets:
+#stats!
+
+        - type: server-stats
+          servers:
+            - type: local
+              name: Multe
+#RSS feed
+        - type: rss
+          title: RSS
+          style: horisontal-cards
+          collapse-after: 5
+          feeds:
+            - url: https://www.nrk.no/toppsaker.rss
+              title: NRK
+           # - url:
+           #   title:
+           # - url:
+           #   title:
+
+#Self host tjenester
+
+    - size: full
+      widgets:
+        - type: search
+          autofocus: true
+
+        - type: monitor
+          cache: 1m
+          title: Services
+          sites:
+            - title: Jellyfin
+              url: https://yourdomain.com/
+              icon: si:jellyfin
+
+            - title: Pihole
+              url: http://10.0.0.200/admin/login
+              icon: si:pi-hole
+
+            - title: qBittorrent
+              url: https://yourdomain.com/
+              icon: si:qbittorrent
+
+            - title: Immich
+              url: https://yourdomain.com/
+              icon: si:immich
+
+            - title: AdGuard Home
+              url: https://yourdomain.com/
+              icon: si:adguard
+
+            - title: Vaultwarden
+              url: https://yourdomain.com/
+              icon: si:vaultwarden
+
+#Bokmerker
+
+        - type: bookmarks
+          groups:
+            - title: General
+              links:
+                - title: Gmail
+                  url: https://mail.google.com/mail/u/0/
+
+                - title: YouTube
+                  url: https://www.youtube.com/
+
+                - title: GitHub
+                  url: https://github.com/
+
+            - title: Wiki
+              links:
+                - title: Wowhead
+                  url: https://www.wowhead.com/
+
+                - title: OSRS Wiki
+                  url: https://oldschool.runescape.wiki/
+
+                - title: Destiny Wiki
+                  url: https://www.destinypedia.com/
+
+            - title: Social
+              links:
+                - title: Reddit
+                  url: https://www.reddit.com/
+
+                - title: Twitter
+                  url: https://twitter.com/
+
+                - title: Instagram
+                  url: https://www.instagram.com/
+
+#Videoer
+
+
+        - type: videos
+          channels:
+            - UCRcgy6GzDeccI7dkbbBna3Q #LEMMMINO
+            - UCzZO4F9Z9gOYoNIyL-XgYZQ #Dungeon Chill
+
+
+#Høyre
+    - size: small
+      widgets:
+
+#klokke
+
+        - type: clock
+          hour-format: 24h
+          timezones:
+            - timezone: Asia/Tokyo
+              label: Tokyo
+#Vær
+        - type: weather
+          units: metric
+          hour-format: 12h
+          location: Hamar, Norway
+#pihole stats
+        - type: dns-stats
+          service: pihole
+          url: http://10.0.0.200/api
+          allow-insecure: true
+
+#        - type: to-do
+#          title: To-do
+#          id: personal
