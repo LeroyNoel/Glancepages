@@ -1,5 +1,5 @@
 # Glancepages
-Config for https://github.com/glanceapp/glance
+Custom home page using https://github.com/glanceapp/glance
 
 
 
