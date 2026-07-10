@@ -1,0 +1,69 @@
+pages:
+  - name: Hers
+    columns:
+      - size: small
+        widgets:
+          - type: calendar
+            first-day-of-week: monday
+
+          - type: rss
+            limit: 10
+            collapse-after: 3
+            cache: 12h
+            feeds:
+              - url: https://www.nrk.no/toppsaker.rss
+                title: NRK
+              - url: https://www.aftenposten.no/rss/
+                title: Aftenposten
+#              - url: https://ishadeed.com/feed.xml
+#                title: Ahmad Shadeed
+
+      - size: full
+        widgets:
+          - type: search
+            autofocus: true
+          - type: bookmarks
+            groups: 
+          - title: General
+            links:
+          - title: Epost
+            url: https://mail.google.com/mail/u/0/
+
+          - title: YouTube
+            url: https://www.youtube.com/
+
+          - title: Netflix
+            url: https://netflix.com/
+          
+          - title: Kos
+            links:
+          - title: Gosupermodel
+            url: https://gosupermodel.com/
+
+          - title: Tracktive
+            url: https://my.tractive.com
+
+          - title: IDK
+            url: https://www.destinypedia.com/
+
+          - title: Social
+            links:
+          - title: Reddit
+            url: https://www.reddit.com/
+
+          - title: Twitter
+            url: https://twitter.com/
+
+          - title: Instagram
+            url: https://www.instagram.com/
+
+          - type: videos
+            channels:
+              - UCY30JRSgfhYXA6i6xX1erWg #SMOSH
+
+      - size: small
+        widgets:
+          - type: weather
+            location: London, United Kingdom
+            units: metric
+            hour-format: 12h
