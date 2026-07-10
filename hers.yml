@@ -1,69 +1,86 @@
-pages:
-  - name: Hers
-    columns:
-      - size: small
-        widgets:
-          - type: calendar
-            first-day-of-week: monday
+#Definer side
+- name: Hers
+  width: wide
+  hide-desktop-navigation: true
+  center-vertically: true
 
-          - type: rss
-            limit: 10
-            collapse-after: 3
-            cache: 12h
-            feeds:
-              - url: https://www.nrk.no/toppsaker.rss
-                title: NRK
-              - url: https://www.aftenposten.no/rss/
-                title: Aftenposten
-#              - url: https://ishadeed.com/feed.xml
-#                title: Ahmad Shadeed
+#Venstre kolonne
+  columns:
+    - size: small
+      widgets:
+#klokke
+        - type: clock
+          hour-format: 24h
+          timezones:
+            - timezone: Asia/Tokyo
+              label: Tokyo
+#RSS feed
+        - type: rss
+          title: RSS
+          style: horisontal-cards
+          collapse-after: 5
+          feeds:
+            - url: https://www.nrk.no/toppsaker.rss
+              title: NRK
 
-      - size: full
-        widgets:
-          - type: search
-            autofocus: true
-          - type: bookmarks
-            groups: 
-          - title: General
-            links:
-          - title: Epost
-            url: https://mail.google.com/mail/u/0/
+#Søk
 
-          - title: YouTube
-            url: https://www.youtube.com/
+    - size: full
+      widgets:
+        - type: search
+          autofocus: true
 
-          - title: Netflix
-            url: https://netflix.com/
-          
-          - title: Kos
-            links:
-          - title: Gosupermodel
-            url: https://gosupermodel.com/
+#Bokmerker
 
-          - title: Tracktive
-            url: https://my.tractive.com
+        - type: bookmarks
+          groups:
+            - title: General
+              links:
+                - title: Gmail
+                  url: https://mail.google.com/mail/u/0/
 
-          - title: IDK
-            url: https://www.destinypedia.com/
+                - title: YouTube
+                  url: https://www.youtube.com/
 
-          - title: Social
-            links:
-          - title: Reddit
-            url: https://www.reddit.com/
+                - title: GitHub
+                  url: https://github.com/
 
-          - title: Twitter
-            url: https://twitter.com/
+            - title: Wiki
+              links:
+                - title: Wowhead
+                  url: https://www.wowhead.com/
 
-          - title: Instagram
-            url: https://www.instagram.com/
+                - title: OSRS Wiki
+                  url: https://oldschool.runescape.wiki/
 
-          - type: videos
-            channels:
-              - UCY30JRSgfhYXA6i6xX1erWg #SMOSH
+                - title: Destiny Wiki
+                  url: https://www.destinypedia.com/
 
-      - size: small
-        widgets:
-          - type: weather
-            location: London, United Kingdom
-            units: metric
-            hour-format: 12h
+            - title: Social
+              links:
+                - title: Reddit
+                  url: https://www.reddit.com/
+
+                - title: Twitter
+                  url: https://twitter.com/
+
+                - title: Instagram
+                  url: https://www.instagram.com/
+
+#Videoer
+
+        - type: videos
+          channels:
+            - UCRcgy6GzDeccI7dkbbBna3Q #LEMMMINO
+
+#Høyre kolonne
+    - size: small
+      widgets:
+
+#Vær
+        - type: weather
+          units: metric
+          hour-format: 12h
+          location: Hamar, Norway
+#NASA
+        - $include: nasa.yml
