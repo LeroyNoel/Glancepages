@@ -36,25 +36,25 @@
           groups:
             - title: General
               links:
-                - title: Gmail
-                  url: https://mail.google.com/mail/u/0/
+                - title: Mail
+                  url: https://outlook.office365.com/mail/
 
                 - title: YouTube
                   url: https://www.youtube.com/
 
-                - title: GitHub
-                  url: https://github.com/
+                - title: Netflix
+                  url: https://netflix.com/
 
-            - title: Wiki
+            - title: Fun
               links:
-                - title: Wowhead
-                  url: https://www.wowhead.com/
+                - title: GoSuperModel
+                  url: https://gosupermodel.com/
 
-                - title: OSRS Wiki
-                  url: https://oldschool.runescape.wiki/
+                - title: Lorem Ipsum
+                  url: https://www.michelson.no/hers
 
-                - title: Destiny Wiki
-                  url: https://www.destinypedia.com/
+                - title: Lorem Ipsum
+                  url: https://www.michelson.no/hers
 
             - title: Social
               links:
@@ -71,7 +71,9 @@
 
         - type: videos
           channels:
-            - UCRcgy6GzDeccI7dkbbBna3Q #LEMMMINO
+            - UCYJPby9DRCteedh5tfxVbrw #SMOSHPIT
+            - UCJ2ZDzMRgSrxmwphstrm8Ww #SMOSHGAMES
+            - UCY30JRSgfhYXA6i6xX1erWg #SMOSH
 
 #Høyre kolonne
     - size: small
