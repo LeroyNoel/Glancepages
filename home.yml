@@ -39,29 +39,30 @@
           cache: 1m
           title: Services
           sites:
-            - title: Jellyfin
-              url: https://yourdomain.com/
-              icon: si:jellyfin
-
             - title: Pihole
-              url: http://10.0.0.200/admin/login
+              url: http://dns.home/admin/login
               icon: si:pi-hole
+
+            - title: Truenas
+              url: http://10.0.0.24/
+              icon: si:truenas
 
             - title: qBittorrent
               url: https://yourdomain.com/
               icon: si:qbittorrent
 
             - title: Immich
-              url: https://yourdomain.com/
+              url: http://10.0.0.24:30041
               icon: si:immich
 
-            - title: AdGuard Home
-              url: https://yourdomain.com/
-              icon: si:adguard
+            - title: Navidrome
+              url: http://10.0.0.24:30043/
+              icon: sh:navidrome-light
 
-            - title: Vaultwarden
+            - title: Jellyfin
               url: https://yourdomain.com/
-              icon: si:vaultwarden
+              icon: si:jellyfin
+
 
 #Bokmerker
 
@@ -69,8 +70,8 @@
           groups:
             - title: General
               links:
-                - title: Gmail
-                  url: https://mail.google.com/mail/u/0/
+                - title: Protonmail
+                  url: https://mail.proton.me/u/0/inbox
 
                 - title: YouTube
                   url: https://www.youtube.com/
@@ -94,8 +95,8 @@
                 - title: Reddit
                   url: https://www.reddit.com/
 
-                - title: Twitter
-                  url: https://twitter.com/
+                - title: Tracktive
+                  url: https://my.tracktive.com/
 
                 - title: Instagram
                   url: https://www.instagram.com/
@@ -127,10 +128,9 @@
           location: Hamar, Norway
 #pihole stats
         - type: dns-stats
-          service: pihole
-          url: http://10.0.0.200/api
-          allow-insecure: true
-
-#        - type: to-do
-#          title: To-do
-#          id: personal
+          service: pihole-v6
+          url: http://dns.home
+          username: admin
+          password: your_password
+          title: Pihole Stats
+          cache: 5m
