@@ -50,11 +50,11 @@
                 - title: GoSuperModel
                   url: https://gosupermodel.com/
 
-                - title: Tracktive
+                - title: Tractive
                   url: https://my.tractive.com/
 
-                - title: Lorem Ipsum
-                  url: https://www.michelson.no/hers
+                - title: Pus dashboard
+                  url: http://pus.home:30103/
 
             - title: Social
               links:
