@@ -2,6 +2,7 @@ server:
   assets-path: /app/assets
 
 theme:
+  # This will be the default theme
   background-color: 229 19 23
   contrast-multiplier: 1.2
   primary-color: 222 74 74
@@ -10,6 +11,22 @@ theme:
   # Note: assets are cached by the browser, changes to the CSS file
   # will not be reflected until the browser cache is cleared (Ctrl+F5)
   custom-css-file: /assets/user.css
+  
+  disable-picker: false
+  presets:
+    gruvbox-dark:
+      background-color: 0 0 16
+      primary-color: 43 59 81
+      positive-color: 61 66 44
+      negative-color: 6 96 59
+
+    dracula:
+      background-color: 231 15 21
+      primary-color: 265 89 79
+      contrast-multiplier: 1.2
+      positive-color: 135 94 66
+      negative-color: 0 100 67
+
 
 pages:
   # It's not necessary to create a new file for each page and include it, you can simply
