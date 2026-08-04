@@ -1,6 +1,14 @@
 server:
   assets-path: /app/assets
 
+auth:
+  secret-key: your_secret_key
+  users:
+    vetle:
+      password-hash: your_password
+    hedda:
+      password-hash: your_password
+
 theme:
   # This will be the default theme
   background-color: 229 19 23
