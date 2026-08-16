@@ -17,14 +17,14 @@
               name: Multe
 #RSS feed
         - type: rss
-          title: RSS
+          title: Innenriks
           style: horisontal-cards
           collapse-after: 5
           feeds:
-            - url: https://www.nrk.no/toppsaker.rss
+            - url: https://www.nrk.no/innlandet/toppsaker.rss
               title: NRK
-           # - url:
-           #   title:
+            - url: https://www.h-a.no/service/rss/
+              title: HA
            # - url:
            #   title:
 
