@@ -48,7 +48,7 @@
               icon: si:truenas
 
             - title: qBittorrent
-              url: https://yourdomain.com/
+              url: http://10.0.0.24:8085/
               icon: si:qbittorrent
 
             - title: Immich
