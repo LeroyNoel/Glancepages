@@ -60,7 +60,7 @@
               icon: sh:navidrome-light
 
             - title: Jellyfin
-              url: https://yourdomain.com/
+              url: http://10.0.0.24:8096/
               icon: si:jellyfin
 
 
