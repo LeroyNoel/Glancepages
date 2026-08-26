@@ -14,18 +14,11 @@
         - type: clock
           hour-format: 24h          
             
-#RSS feed
-        - type: rss
-          title: Innenriks
-          style: horisontal-cards
-          collapse-after: 5
-          feeds:
-            - url: https://www.nrk.no/innlandet/toppsaker.rss
-              title: NRK
-            - url: https://www.h-a.no/service/rss/
-              title: HA
-           # - url:
-           #   title:
+#Weather 
+        - type: weather
+          units: metric
+          hour-format: 12h
+          location: Hamar, Norway
 
 #Self host tjenester
 
@@ -51,22 +44,23 @@
               icon: si:qbittorrent
 
 #Bokmerker
-
+  columns:
+    - size: small
+      widgets:
+      
         - type: bookmarks
           groups:
             - title: General
               links:
+                - title: Calendar
+                  url: https://calendar.google.com/
+
                 - title: Protonmail
                   url: https://mail.proton.me/u/0/inbox
 
-                - title: GitHub
-                  url: https://www.github.com/
+                - title: Outlook
+                  url: https://outlook.office365.com/
 
-                - title: YouTube
-                  url: https://youtube.com/
-
-            - title: Skole
-              links:
                 - title: Moodle
                   url: https://studies.itacademy.no/
 
@@ -76,14 +70,11 @@
                 - title: Copilot
                   url: https://copilot.microsoft.com/
 
-            - title: Social
-              links:
-                - title: Reddit
-                  url: https://www.reddit.com/
-
-                - title: Tractive
-                  url: https://my.tractive.com/
-
                 - title: Instagram
                   url: https://www.instagram.com/
 
+                - title: GitHub
+                  url: https://www.github.com/
+
+                - title: YouTube
+                  url: https://youtube.com/
