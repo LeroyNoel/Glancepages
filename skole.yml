@@ -1,7 +1,7 @@
 #Definer side
 - name: Itacademy
   width: wide
-  hide-desktop-navigation: true
+  hide-desktop-navigation: false
   center-vertically: true
 
 #Venstre kolonne
