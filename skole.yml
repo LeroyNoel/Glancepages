@@ -1,5 +1,5 @@
 #Definer side
-- name: Startpage
+- name: Itacademy
   width: wide
   hide-desktop-navigation: true
   center-vertically: true
