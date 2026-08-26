@@ -44,7 +44,6 @@
               icon: si:qbittorrent
 
 #Bokmerker
-  columns:
     - size: small
       widgets:
       
@@ -52,26 +51,23 @@
           groups:
             - title: General
               links:
+                - title: Studies/Moodle
+                  url: https://studies.itacademy.no/
+
                 - title: Calendar
                   url: https://calendar.google.com/
 
                 - title: Protonmail
                   url: https://mail.proton.me/u/0/inbox
 
-                - title: Outlook
+                - title: Outlook|
                   url: https://outlook.office365.com/
-
-                - title: Moodle
-                  url: https://studies.itacademy.no/
 
                 - title: Onedrive
                   url: https://onedrive.live.com/
 
                 - title: Copilot
                   url: https://copilot.microsoft.com/
-
-                - title: Instagram
-                  url: https://www.instagram.com/
 
                 - title: GitHub
                   url: https://www.github.com/
