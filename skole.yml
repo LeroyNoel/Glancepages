@@ -1,0 +1,89 @@
+#Definer side
+- name: Startpage
+  width: wide
+  hide-desktop-navigation: true
+  center-vertically: true
+
+#Venstre kolonne
+
+  columns:
+    - size: small
+      widgets:
+#stats!
+
+        - type: clock
+          hour-format: 24h          
+            
+#RSS feed
+        - type: rss
+          title: Innenriks
+          style: horisontal-cards
+          collapse-after: 5
+          feeds:
+            - url: https://www.nrk.no/innlandet/toppsaker.rss
+              title: NRK
+            - url: https://www.h-a.no/service/rss/
+              title: HA
+           # - url:
+           #   title:
+
+#Self host tjenester
+
+    - size: full
+      widgets:
+        - type: search
+          autofocus: true
+
+        - type: monitor
+          cache: 1m
+          title: Tjenester
+          sites:
+            - title: Kavita
+              url: https://manga.michelson.no/
+              icon: si:kavita
+
+            - title: Navidrome
+              url: https://music.michelson.no/
+              icon: sh:navidrome-light
+
+            - title: qBittorrent
+              url: http://10.0.0.24:8085/
+              icon: si:qbittorrent
+
+#Bokmerker
+
+        - type: bookmarks
+          groups:
+            - title: General
+              links:
+                - title: Protonmail
+                  url: https://mail.proton.me/u/0/inbox
+
+                - title: GitHub
+                  url: https://www.github.com/
+
+                - title: YouTube
+                  url: https://youtube.com/
+
+            - title: Skole
+              links:
+                - title: Moodle
+                  url: https://www.PLACEHOLDER.com/
+
+                - title: Onedrive
+                  url: https://oldschool.runescape.wiki/
+
+                - title: Copilot
+                  url: https://www.destinypedia.com/
+
+            - title: Social
+              links:
+                - title: Reddit
+                  url: https://www.reddit.com/
+
+                - title: Tractive
+                  url: https://my.tractive.com/
+
+                - title: Instagram
+                  url: https://www.instagram.com/
+
