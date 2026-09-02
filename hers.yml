@@ -30,6 +30,25 @@
         - type: search
           autofocus: true
 
+#Services
+
+        - type: monitor
+          cache: 1m
+          title: Services
+          sites:
+
+            - title: Pus
+              url: http://pus.home/
+              icon: sh:dynacat-light
+
+            - title: Immich
+              url: http://10.0.0.24:30041
+              icon: si:immich
+
+            - title: Jellyfin
+              url: http://10.0.0.24:8096/
+              icon: si:jellyfin
+
 #Bokmerker
 
         - type: bookmarks
